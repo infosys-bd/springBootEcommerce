@@ -5,14 +5,14 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ecommerce.Dao.PartDao;
 import com.ecommerce.Entity.Part;
+import com.ecommerce.dao.impl.PartDaoImpl;
 
 @Service
 public class PartService {
 	
 	@Autowired
-	private PartDao partDao;
+	private PartDaoImpl partDao;
 	
 	public Collection<Part> getAllParts(){
 		

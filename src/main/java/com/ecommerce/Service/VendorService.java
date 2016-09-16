@@ -5,14 +5,14 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ecommerce.Dao.VendorDao;
 import com.ecommerce.Entity.Vendor;
+import com.ecommerce.dao.impl.VendorDaoImpl;
 
 @Service
 public class VendorService {
 
 	@Autowired
-	private VendorDao vendorDao;
+	private VendorDaoImpl vendorDao;
 	
 	public Collection<Vendor> getAllVendors(){
 		return vendorDao.getAllVendors();
